@@ -1,12 +1,15 @@
 from tpblite import TPB
-from simple_term_menu import TerminalMenu
+from urllib import parse
+from SimpleTorrentStreaming import SimpleTorrentStreaming
 
 
 def main():
     t = TPB()
     search = input('What do you want? ')
     torrents = t.search(search).getBestTorrent()
-    return stream(torrents)
+    torrent = torrents.magnetlink
+    stream(torrents)
+
 
 def stream(torrents):
     pass
