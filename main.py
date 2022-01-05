@@ -1,6 +1,5 @@
 from tpblite import TPB
-from urllib import parse
-from SimpleTorrentStreaming import SimpleTorrentStreaming
+import os 
 
 
 def main():
@@ -8,11 +7,11 @@ def main():
     search = input('What do you want? ')
     torrents = t.search(search).getBestTorrent()
     torrent = torrents.magnetlink
-    stream(torrents)
+    run_webtorrent(torrent)
 
-
-def stream(torrents):
-    pass
+def run_webtorrent(torrent):
+    cmd = f'webtorrent "{torrent}" --mpv --player-args="video-on-top"'
+    os.system(cmd)
 
 
     
