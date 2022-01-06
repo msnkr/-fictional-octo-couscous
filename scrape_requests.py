@@ -3,8 +3,11 @@ import requests
 
 
 url = 'https://1337x.to/'
-response = requests.get(site)
+response = requests.get(url)
+
 if response.ok:
-    print('All Good')
+    print('Server is running')
 else:
-    print('Something is wrong!')
+    print('Error with server')
+
+
