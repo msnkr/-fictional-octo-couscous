@@ -3,13 +3,15 @@ import os
 
 
 def main():
+    i = 0
     t = TPB()
     search = input('What do you want? ')
     torrents = t.search(search)
-    for num, torrent in enumerate(torrents, start=1):
-        print(num, torrent)
+    for torrent in torrents:
+        i += 1
+        print(i, torrent)
 
-    answer = int(input('Select which one you want to watch: '))
+    
 
     
 # def run_webtorrent(torrent):
