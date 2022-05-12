@@ -3670,3 +3670,10 @@ main.py
 .venv/Lib/site-packages/tpblite/models/torrents.py
 .venv/Lib/site-packages/tpblite/models/utils.py
 .venv/Lib/site-packages/tpblite/tpblite.py
+.venv/Lib/site-packages/__pycache__/termcolor.cpython-39.pyc
+.venv/Lib/site-packages/termcolor-1.1.0-py3.9.egg-info/dependency_links.txt
+.venv/Lib/site-packages/termcolor-1.1.0-py3.9.egg-info/installed-files.txt
+.venv/Lib/site-packages/termcolor-1.1.0-py3.9.egg-info/PKG-INFO
+.venv/Lib/site-packages/termcolor-1.1.0-py3.9.egg-info/SOURCES.txt
+.venv/Lib/site-packages/termcolor-1.1.0-py3.9.egg-info/top_level.txt
+.venv/Lib/site-packages/termcolor.py
