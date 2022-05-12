@@ -36,9 +36,9 @@ for title in get_torrent:
 
 for item in torrent_dict:
     random_color = random.choice(colors)
-    print(f'{colored(item, random_color)}: {colored(torrent_dict[item], random_color)}')
+    print(f'| {colored(item, random_color)} | {colored(torrent_dict[item], random_color)} |')
 
 random_color = random.choice(colors)
 select_dict = int(input(colored('Select a number: ', random_color)))
 torrent_link = magnet_dict[select_dict]
-
+print(torrent_link)
