@@ -18,3 +18,9 @@ Install the required packages.
 ```
 pip install -r requirments.txt
 ```
+
+Note. You need webtorrent-cli and mpv.
+On arch based distro's
+```
+yay -S webtorrent-cli mpv
+```
