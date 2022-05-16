@@ -30,7 +30,10 @@ yay -S webtorrent-cli mpv
 
 ---
 
-<img src="https://github.com/msnkr/fictional-octo-couscous/blob/main/tpb_inst.gif" alt="My Project GIF" width="600" height="400">
+
+
+https://user-images.githubusercontent.com/74895279/168657209-7c90bd35-4709-45bc-a8c1-ded998037cad.mp4
+
 
 
 ---
