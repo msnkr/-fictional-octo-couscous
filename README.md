@@ -1,4 +1,4 @@
-# -fictional-octo-couscous
+# fictional-octo-couscous
 
 <h1>A simple torrent streamer.</h1>
 <h4>I created this project because I was fascinated how apps like kodi and Elementum do this. d</h4>
