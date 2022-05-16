@@ -30,6 +30,12 @@ yay -S webtorrent-cli mpv
 
 ---
 
+<img src="https://github.com/msnkr/fictional-octo-couscous/blob/main/tpb_steps.gif" alt="My Project GIF" width="800" height="600">
+
+
+---
+
+
 
 This project isn't complete. This program will eventually be fixed to run on Windows, and other distributions of Linux. 
 It needs some fixing which I will get to once I've finished some other projects. 
