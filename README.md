@@ -31,8 +31,9 @@ yay -S webtorrent-cli mpv
 ---
 
 
-
-https://user-images.githubusercontent.com/74895279/168657209-7c90bd35-4709-45bc-a8c1-ded998037cad.mp4
+<p>
+  <img src="https://github.com/msnkr/fictional-octo-couscous/blob/main/tpb_inst.gif" width="800" height="500">
+</p>
 
 
 
