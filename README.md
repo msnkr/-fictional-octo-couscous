@@ -8,3 +8,13 @@ This is a very simple streamer, I didn't have to scrape any data because there a
 Create a .venv
 ```
 python -m venv .venv
+```
+
+Activate your .venv
+```
+source .venv/bin/activate
+```
+Install the required packages.
+```
+pip install -r requirments.txt
+```
