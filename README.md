@@ -22,7 +22,10 @@ pip install -r requirments.txt
 ```
 
 Note. You need webtorrent-cli and mpv.
-On arch based distro's
+On arch based distro's, run
 ```
 yay -S webtorrent-cli mpv
 ```
+
+This program will eventually be fixed to run on Windows, and other distributions of Linux. 
+This project isn't complete. It needs some fixing which I will get to once I've finished some other projects. 
