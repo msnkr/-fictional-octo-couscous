@@ -3,9 +3,7 @@ from tpblite import TPB
 from tpblite import CATEGORIES
 import random
 from termcolor import colored
-import os
 
-start_again = True
 
 def change_colors():
         colors = ['red', 'green', 'blue', 'yellow', 'grey', 'magenta', 'cyan']
@@ -13,12 +11,8 @@ def change_colors():
 
 
 def play_torrent(torrent_dict, magnet_dict):
-    if torrent_dict != True:
-        print(colored('Theres nothing to show...', change_colors()))
-        search_torrent()
-    else:
-        for item in torrent_dict:
-            print(f"| {colored(item, change_colors())} | {colored(torrent_dict[item], change_colors())} |")
+    for item in torrent_dict:
+        print(f"| {colored(item, change_colors())} | {colored(torrent_dict[item], change_colors())} |")
 
     select_dict = int(input(colored('Select a number: ', change_colors())))
     torrent_itself = magnet_dict[select_dict]
@@ -53,6 +47,12 @@ def search_torrent():
         accu += 1 
 
     play_torrent(torrent_dict, magnet_dict)
+
+    play_again = input(colored('Would you like to quit?: Y/N: ')).lower()
+    if play_again == 'y':
+        search_torrent()
+    else:
+        print('Bye-Bye')
 
 
 search_torrent()
