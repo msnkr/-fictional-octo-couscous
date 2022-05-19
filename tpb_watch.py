@@ -5,19 +5,15 @@ import random
 from termcolor import colored
 
 
-def change_colors():
-        colors = ['red', 'green', 'blue', 'yellow', 'grey', 'magenta', 'cyan']
-        return random.choice(colors)
-
-
 def play_torrent(torrent_dict, magnet_dict):
+    print(torrent_dict)
     for item in torrent_dict:
         print(f"| {colored(item, change_colors())} | {colored(torrent_dict[item], change_colors())} |")
 
     select_dict = int(input(colored('Select a number: ', change_colors())))
     torrent_itself = magnet_dict[select_dict]
 
-    subprocess.call(['webtorrent', torrent_itself, '--mpv'])
+    # subprocess.call(['webtorrent', torrent_itself, '--mpv'])
 
 
 def search_torrent():
@@ -53,6 +49,11 @@ def search_torrent():
         search_torrent()
     else:
         print('Bye-Bye')
+
+
+def change_colors():
+        colors = ['red', 'green', 'blue', 'yellow', 'grey', 'magenta', 'cyan']
+        return random.choice(colors)
 
 
 search_torrent()
