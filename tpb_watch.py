@@ -6,9 +6,12 @@ from termcolor import colored
 
 
 def play_torrent(torrent_dict, magnet_dict):
-    print(torrent_dict)
-    for item in torrent_dict:
-        print(f"| {colored(item, change_colors())} | {colored(torrent_dict[item], change_colors())} |")
+    if bool(torrent_dict) != True:
+        print('There was nothing to be found... Taking you back to main screen...')
+        search_torrent()
+    else:
+        for item in torrent_dict:
+            print(f"| {colored(item, change_colors())} | {colored(torrent_dict[item], change_colors())} |")
 
     select_dict = int(input(colored('Select a number: ', change_colors())))
     torrent_itself = magnet_dict[select_dict]
@@ -22,9 +25,13 @@ def search_torrent():
     accu = 1
 
     t = TPB('https://tpb.party')
+    print('Press "q" to quit.')
     search = input(colored('What do you want to watch? A (M)ovie or (S)eries?: ', change_colors())).lower()
+    if search == 'q':
+        print('Bye-Bye!')
+        exit()
 
-    if search == 'm':
+    elif search == 'm':
         movie_name = input(colored('Whats the movie name?: ', change_colors())).lower()
         get_torrent = t.search(movie_name, category=CATEGORIES.VIDEO.MOVIES)
 
